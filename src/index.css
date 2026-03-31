@@ -115,11 +115,11 @@ input{
    color: aliceblue;
    padding: 5px;
    transition: 0.3s ease-in-out;
+   opacity: 0;
 }
 
-.dowload:hover
-{
-  background-color: black;
+.continer:hover .dowload{
+  opacity: 1;
 }
 
 @media (max-width: 900px) {

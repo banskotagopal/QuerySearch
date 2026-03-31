@@ -1,5 +1,4 @@
-import { Button } from "bootstrap"
-import { useSelector } from "react-redux"
+ import { useSelector } from "react-redux"
 
 function Resultcard()
 {
@@ -9,8 +8,8 @@ function Resultcard()
     <div className="media-continer">
                {currentTab === 'Photo' ? result.map((img,idx) =>(
               <div className="continer"  key={idx}>
-                <img className="media" key={idx} src={img.src}   />
-               <button className="dowload">Dowload</button>
+              <a href={img.src} download><img className="media" key={idx} src={img.src}   /></a>
+              <button className="dowload">Dowload</button> 
               </div>
           )) : null}
             {currentTab === 'Video' ? result.map((img,idx) =>(
